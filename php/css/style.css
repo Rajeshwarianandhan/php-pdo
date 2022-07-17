@@ -1,0 +1,161 @@
+body {
+    /* background-color: rgba(115, 24, 185, 0.992); */
+    font-family: Poppins;
+    /* font-size: 1.5rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    height: 100vh;
+}
+
+h4 {
+    margin: 0;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    /* color: red; */
+    color: #fff;
+    /* border-bottom: 2px solid red; */
+}
+
+.container {
+    width: 500px;
+    /* border: 0px 2px 2px 0px solid red; */
+    border-bottom: 4px solid red;
+    border-top: 4px solid #000;
+    border-left: 10px solid #000;
+    border-right: 10px solid red;
+    border-radius: 50px 0px 50px 0px;
+    background-color: rgba(82, 18, 130, 0.992);
+    /* background: #ff0062; */
+}
+
+.content {
+    /* border: 2px solid red; */
+    margin: 0 20px;
+}
+
+.form-group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.form-field {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+.form-field::placeholder {
+    color: transparent;
+}
+
+.form-label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #9b9b9b;
+}
+
+.form-field:placeholder-shown~.form-label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+}
+
+.form-field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #ff0062, #00ffff);
+    border-image-slice: 1;
+}
+
+.form-field:focus~.form-label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #2afadf;
+    font-weight: 700;
+}
+
+.button {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+}
+
+.button input {
+    font-size: 16px;
+    padding: 6px;
+    width: 40%;
+}
+
+a {
+    font-size: 16px;
+    padding: 6px;
+    text-decoration: none;
+    color: #000;
+    cursor: default;
+}
+
+.ancher {
+    height: 35px;
+    margin: 10px 0px 20px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    display: block;
+}
+
+.ancher-log {
+    height: 35px;
+    margin: 10px 0 15px 135px;
+}
+
+.ancher-cancel {
+    height: 35px;
+    width: 30%;
+    margin: 0px 0px 10px 160px;
+}
+
+.list {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+@media ( max-width :584px) {
+    .container {
+        max-width: 100%;
+    }
+    form .card-datails .card-box {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .container form .card-datails {
+        max-height: 300px;
+        overflow: scroll;
+    }
+    .card-datails::-webkit-scrollbar {
+        width: 0;
+    }
+}
